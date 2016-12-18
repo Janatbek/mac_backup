@@ -1,0 +1,54 @@
+!SESSION 2016-11-27 22:15:13.524 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_72
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/janik/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/janik/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.osgi 2 0 2016-11-27 22:15:15.250
+!MESSAGE The plugin "com.jcraft.eclipse.team.sftp" with the version "0.0.4" and location "reference:file:plugins/com.jcraft.eclipse.team.sftp_0.0.4.jar" is an old style Eclipse 2.0 plugin with no OSGi bundle manifest.  Support for Eclipse 2.0 style plugins will be removed in a future release. Refer to the migration guide for details.
+
+!ENTRY org.eclipse.osgi 2 0 2016-11-27 22:15:16.000
+!MESSAGE The plugin "org.eclipse.team.extras" with the version "3.1.0" and location "reference:file:plugins/org.eclipse.team.extras_3.1.0/" is an old style Eclipse 2.0 plugin with no OSGi bundle manifest.  Support for Eclipse 2.0 style plugins will be removed in a future release. Refer to the migration guide for details.
+
+!ENTRY org.eclipse.osgi 2 0 2016-11-27 22:15:16.013
+!MESSAGE The plugin "org.eclipse.team.ftp" with the version "3.1.0" and location "reference:file:plugins/org.eclipse.team.ftp_3.1.0/" is an old style Eclipse 2.0 plugin with no OSGi bundle manifest.  Support for Eclipse 2.0 style plugins will be removed in a future release. Refer to the migration guide for details.
+
+!ENTRY org.eclipse.osgi 2 0 2016-11-27 22:15:16.033
+!MESSAGE The plugin "org.eclipse.team.webdav" with the version "3.1.0" and location "reference:file:plugins/org.eclipse.team.webdav_3.1.0/" is an old style Eclipse 2.0 plugin with no OSGi bundle manifest.  Support for Eclipse 2.0 style plugins will be removed in a future release. Refer to the migration guide for details.
+
+!ENTRY org.eclipse.osgi 2 0 2016-11-27 22:15:16.143
+!MESSAGE The plugin "org.eclipse.webdav" with the version "3.0.0" and location "reference:file:plugins/org.eclipse.webdav_3.0.0/" is an old style Eclipse 2.0 plugin with no OSGi bundle manifest.  Support for Eclipse 2.0 style plugins will be removed in a future release. Refer to the migration guide for details.
+
+!ENTRY org.eclipse.core.net 1 0 2016-11-27 22:16:18.692
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2016-11-27 22:16:19.030
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-27 22:16:19.030
+!MESSAGE A conflict occurred for ALT+COMMAND+F:
+Binding(ALT+COMMAND+F,
+	ParameterizedCommand(Command(com.adobe.ide.coldfusion.keyboard.CFSearchDialogCmd,ColdFusion Search Dialog,
+		,
+		Category(com.adobe.ide.coldfusion.commands,CFML Editor,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35835fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+F,
+	ParameterizedCommand(Command(com.adobe.ide.coldfusion.keyboard.CFSearchDialogCmd,ColdFusion Search Dialog,
+		,
+		Category(com.adobe.ide.coldfusion.commands,CFML Editor,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35835fa,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+F,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.ForceReturn,Force Return,
+		Forces return from method with value of selected expression ,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56f71edb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)

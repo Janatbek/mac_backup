@@ -1,0 +1,35 @@
+<form action="/surveys" method="post">
+	<fieldset>
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+		<p>
+			<label>Your Name:</label>
+			<input type="text" name="survey[name]">
+		</p>
+		<p>
+			<label>Dojo Location</label>
+			<select name="survey[location]">
+				<option value="Mountain Valley, CA">Mountain Valley, CA</option>
+				<option value="San Diego, CA">San Diego, CA</option>
+				<option value="Seattle, Phoenix">Seattle, Phoenix</option>
+				<option value="SAn Jose, CA">Mountain Valley, CA</option>
+			</select>
+		</p>
+		<p>
+			<label>Language</label>
+			<select name="survey[language]">
+				<option value="PHP">PHP</option>
+				<option value="Javascript">Javascript</option>
+				<option value="Ruby on Rails">Ruby on Rails</option>
+				<option value="Python">Python</option>
+			</select>
+		</p>
+		<p>
+			<label>Comment</label>
+			<textarea name="survey[comment]"cols="30" rows="4"></textarea>
+		</p>
+		<p>
+			<input type="submit" value="submit">
+		</p>
+	</fieldset>
+
+</form>

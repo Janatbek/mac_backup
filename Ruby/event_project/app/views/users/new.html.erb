@@ -1,0 +1,56 @@
+<div class="container">
+	<form action="/users" method="post" id="register" class="form-horizontal col-md-6">
+			<h3>Register</h3>
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<p>
+				<label>First Name</label>
+				<input type="text" name="user[first_name]">
+			</p>
+			<p>
+				<label>Last Name</label>
+				<input type="text" name="user[last_name]">
+			</p>
+			<p>
+				<label>Email</label>
+				<input type="text" name="user[email]">
+			</p>
+			<p>
+				<label>Location</label>
+				<input type="text" name="user[city]">
+
+				<select name="user[state]">
+					<option value="NY">NY</option>
+					<option value="CA">CA</option>
+					<option value="NJ">NJ</option>
+				</select>
+			</p>
+
+			<p>
+				<label>Password</label>
+				<input type="password" name="user[password]">
+			</p>
+			<p>
+				<label>Password Confirm</label>
+				<input type="password" name="user[password_confirmation]">
+			</p>
+			<p>
+				<button>Register</button>
+			</p>
+	</form>
+	<form action="/sessions" method="post" id="login" class="form-horizontal col-md-6">
+			<h3>Login</h3>
+			<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+			<p>
+				<label>Email:</label>
+				<input type="text" name="email">
+			</p>
+			<p>
+				<label>Password:</label>
+				<input type="password" name="password">
+			</p>
+			<p>
+				<button>Login</button>
+			</p>
+	</form>
+</div>
+

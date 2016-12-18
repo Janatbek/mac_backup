@@ -1,0 +1,33 @@
+<div id='error-div'>
+<% if flash[:errors]
+	flash[:errors].each{ |error| %>
+		<p><%=error%></p>
+	<% } 
+	end %>
+</div>
+<div id='login-div'>
+	<form action='/login' method='post'>
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		<p>Email: <input type='text' name='email'></p>
+		<p>Password: <input type='password' name='password'></p>
+		<button>Login</button>
+	</form>
+</div>
+<div id='reg-div'>
+	<form action='/register' method='post'>
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		<p>First Name: <input type='text' name='user[first_name]'></p>
+		<p>Last Name: <input type='text' name='user[last_name]'></p>
+		<p>Email: <input type='text' name='user[email]'></p>
+		<p>Location: <input type='text' name='user[city]'>
+		<select name='user[state]'>
+			<option value='CA'>CA</option>
+			<option value='IL'>IL</option>
+			<option value='NY'>NY</option>
+		</select>
+		</p>
+		<p>Password: <input type='password' name='user[password]'></p>
+		<p>Confirm Password: <input type='password' name='user[password_confirmation]'></p>
+		<button>Login</button>
+	</form>
+</div>

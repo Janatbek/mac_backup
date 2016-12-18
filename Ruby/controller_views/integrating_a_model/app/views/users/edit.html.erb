@@ -1,0 +1,16 @@
+<h1>Users#edit</h1>
+<p>Find me in app/views/users/edit.html.erb</p>
+
+hi from edit page
+
+<form action="/users/:id" method="post">
+	<fieldset>
+		<legend>Edit  User</legend>
+		<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+	
+			<input type="text" name="name" placeholder="give user a name" value="<%= @person.name %>">
+
+		
+		<button>Edit user</button>
+	</fieldset>
+</form>
